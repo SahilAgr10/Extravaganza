@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/jake_blucker2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Create."
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textSize="44dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Explore"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textSize="44dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Expand"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textSize="44dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif-black"
+        android:text="Conquer"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textSize="44dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="30dp"
+        android:padding="7dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#c68642"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="Get Started " />
+
+</LinearLayout>
