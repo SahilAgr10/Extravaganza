@@ -5,7 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
 
 import java.util.ArrayList;
 
@@ -28,6 +30,10 @@ public class travelled extends AppCompatActivity {
         list.add("Chandrashila");
         list.add("Rajgad ");
         list.add("Ratangad");
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,list);
+        ListView listView = (ListView) findViewById(R.id.list);
+        listView.setAdapter(adapter);
 
 
 
