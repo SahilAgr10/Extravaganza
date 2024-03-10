@@ -9,56 +9,61 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
         android:paddingStart="20dp"
-        android:paddingLeft="20dp"
-        android:paddingTop="20dp"
-        android:text="Create."
+        android:paddingTop="10dp"
+        android:text="@string/create"
         android:textColor="@color/white"
-        android:textSize="44dp"
-        android:textStyle="bold" />
+        android:textSize="36sp"
+        android:textStyle="bold"
+        tools:ignore="InvalidId" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
         android:paddingStart="20dp"
-        android:paddingTop="5dp"
-        android:text="Explore"
-        android:textColor="@color/white"
-        android:textSize="44dp"
-        android:textStyle="bold" />
+        android:text="@string/explore"
+        android:textColor="@color/black"
+        android:textSize="36sp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
         android:paddingStart="20dp"
-        android:paddingTop="5dp"
-        android:text="Expand"
-        android:textColor="@color/white"
-        android:textSize="44dp"
-        android:textStyle="bold" />
+        android:text="@string/expand"
+        android:textColor="@color/black"
+        android:textSize="36sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:paddingStart="20dp"
+        android:text="Conquer"
+        android:textColor="@color/black"
+        android:textSize="36sp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:fontFamily="sans-serif-black"
+        android:fontFamily="sans-serif-medium"
         android:paddingStart="20dp"
         android:paddingTop="5dp"
-        android:text="Conquer"
-        android:textColor="@color/white"
-        android:textSize="44dp"
-        android:textStyle="bold" />
+        android:text="Life is all about travel .Pack your bags !"
+        android:textColor="#38404d"
+        android:textSize="20dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="end"
+        android:layout_gravity="center"
         android:layout_marginBottom="20dp"
         android:backgroundTint="#6F4117"
         android:paddingLeft="30dp"
@@ -67,6 +72,7 @@
         android:paddingBottom="10dp"
         android:text="Get Started  "
         android:textColor="@color/white"
+        android:layout_marginStart="80dp"
         android:textSize="18sp" />
 
 </LinearLayout>
