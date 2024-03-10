@@ -59,14 +59,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="100dp"
-        android:backgroundTint="#c68642"
-        android:paddingLeft="20dp"
-        android:rotation="-12"
-        android:rotationX="12"
-        android:rotationY="4"
-        android:text="Get Started ->"
-        android:textSize="14sp" />
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#6F4117"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Get Started  "
+        android:textColor="@color/white"
+        android:textSize="18sp" />
 
 </LinearLayout>
