@@ -18,6 +18,11 @@ public class travelled extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_travelled);
 
+        ArrayList<customPlaces> lists = new ArrayList<customPlaces>();
+//        customPlaces places = new customPlaces("Mumbai","12/01/2021");
+//        lists.add(places);
+          lists.add(new customPlaces("Mumbai","12/01/2021"));
+
         ArrayList<String> list = new ArrayList<>();
         list.add("Mumbai");
         list.add("Kalsubai ,Nashik");

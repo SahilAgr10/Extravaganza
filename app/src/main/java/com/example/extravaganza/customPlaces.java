@@ -3,6 +3,7 @@ package com.example.extravaganza;
 public class customPlaces {
     private String place;
     private String date;
+    // Drawable resource ID
     private int ImageId;
 
     public String getPlace() {
