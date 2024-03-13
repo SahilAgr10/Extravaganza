@@ -15,16 +15,12 @@ import java.util.ArrayList;
 public class CustomAdapter extends ArrayAdapter<CustomPlaces> {
     public CustomAdapter(@NonNull Context context, ArrayList<CustomPlaces> customPlaces) {
         super(context, 0, customPlaces);
-    }
-
-    @NonNull
-    @Override
-    public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
+    }@Override
+    public View getView(int position,View convertView,ViewGroup parent){
         View ListItemView = convertView;
         if(ListItemView==null){
             ListItemView = LayoutInflater.from(getContext()).inflate(R.layout.travel_layout,parent,false);
-        }
-        CustomPlaces customPlaces = getItem(position);
+        } CustomPlaces customPlaces = getItem(position);
 
         TextView places = (TextView) ListItemView.findViewById(R.id.place_view);
         places.setText(customPlaces.getPlace());
