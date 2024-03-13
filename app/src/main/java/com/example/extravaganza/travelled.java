@@ -2,11 +2,8 @@ package com.example.extravaganza;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -18,25 +15,25 @@ public class travelled extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_travelled);
 
-        ArrayList<customPlaces> lists = new ArrayList<customPlaces>();
+        ArrayList<CustomPlaces> lists = new ArrayList<CustomPlaces>();
 //        customPlaces places = new customPlaces("Mumbai","12/01/2021");
 //        lists.add(places);
-          lists.add(new customPlaces("Mumbai","12/01/2021"));
+          lists.add(new CustomPlaces("Mumbai","12/01/2021"));
 
-        ArrayList<String> list = new ArrayList<>();
-        list.add("Mumbai");
-        list.add("Kalsubai ,Nashik");
-        list.add("Pune");
-        list.add("Imagica Theme Park");
-        list.add("Delhi");
-        list.add("Haridwar");
-        list.add("Rishikesh");
-        list.add("Tungnath");
-        list.add("Chandrashila");
-        list.add("Rajgad ");
-        list.add("Ratangad");
+        ArrayList<CustomPlaces> list = new ArrayList<>();
+        list.add(new CustomPlaces("Mumbai","12/01/21"));
+        list.add(new CustomPlaces("Kalsubai Hike","12/01/21"));
+        list.add(new CustomPlaces("Pune ","12/01/21"));
+        list.add(new CustomPlaces("Delhi","12/01/21"));
+        list.add(new CustomPlaces("Haridwar","12/01/21"));
+        list.add(new CustomPlaces("Rishikesh","12/01/21"));
+        list.add(new CustomPlaces("Tungnath","12/01/21"));
+        list.add(new CustomPlaces("Chandrashila Trek","12/01/21"));
+        list.add(new CustomPlaces("Imagica Theme park","12/01/21"));
+        list.add(new CustomPlaces("Ratangad Trek","12/01/21"));
+        list.add(new CustomPlaces("Rajasthan Trek","12/01/21"));
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,list);
+        CustomAdapter adapter = new CustomAdapter(this,list);
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(adapter);
 

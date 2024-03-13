@@ -1,6 +1,6 @@
 package com.example.extravaganza;
 
-public class customPlaces {
+public class CustomPlaces {
     private String place;
     private String date;
     // Drawable resource ID
@@ -22,7 +22,7 @@ public class customPlaces {
         this.date = date;
     }
 
-    public customPlaces(String place, String date){
+    public CustomPlaces(String place, String date){
         this.place=place;
         this.date=date;
     }
